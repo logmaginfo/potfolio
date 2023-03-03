@@ -6,6 +6,8 @@
 
     <img src="{% static 'portfolio/log.JPG' %}" />
     <hr>
+    {{ emo }}
+    <hr>
     {% for project in projects %}
     {% if project.url %}
     <a href="{{ project.url }}" target="_blank"><img src="/img/{{ project.image }}"></a>
